@@ -1,0 +1,21 @@
+{
+	"name": "simplewebsite",
+	"version": "1.0.0",
+	"description": "Simple website",
+	"main": "server.js",
+	"scripts": {
+		"build-css": "stylus source/stylus/index.styl -o static",
+		"watch-css": "stylus source/stylus/index.styl -o static -w",
+		"clean": "rd /s /q static && mkdir static",
+		"build": "npm run clean && npm run build-css",
+		"watch": "npm run clean && npm run watch-css && nodemon",
+		"start": "node server"
+	},
+	"author": "Jacob",
+	"license": "ISC",
+	"dependencies": {
+		"express": "^4.14.0",
+		"morgan": "^1.7.0",    "nodemon": "^1.9.2"
+
+	}
+}
