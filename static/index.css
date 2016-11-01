@@ -1,5 +1,58 @@
-body a {
-  font: 12px/1.4 "Lucida Grande", Arial, sans-serif;
-  background: #000;
-  color: #ccc;
+@font-face {
+  font-family: Open Sans;
+  src: url("/fonts/OpenSans-Regular.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: Open Sans;
+  src: url("/fonts/OpenSans-Bold.ttf");
+  font-weight: 700;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Open Sans;
+}
+* {
+  box-sizing: border-box;
+}
+h1 {
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+header {
+  position: fixed;
+  height: 65px;
+  background: #fff;
+  border-bottom: 1px solid #c8c8c8;
+  width: 100%;
+}
+header .container {
+  width: 1200px;
+  margin: 0 auto;
+  height: inherit;
+}
+header .container div {
+  display: flex;
+  align-items: center;
+  height: inherit;
+}
+header .container .left {
+  float: left;
+}
+header .container .right {
+  float: right;
+}
+header .container .right a {
+  color: #fff;
+  margin-right: 20px;
+  padding: 10px 14px;
+  background: #64b9f0;
+}
+header .button {
+  border-radius: 3px;
+  font-size: 18px;
 }

@@ -4,12 +4,13 @@
 	"description": "Simple website",
 	"main": "server.js",
 	"scripts": {
-		"build-css": "stylus source/stylus/index.styl -o static",
-		"watch-css": "stylus source/stylus/index.styl -o static -w",
-		"clean": "rd /s /q static && mkdir static",
+		"build-css": "stylus source/stylus/ -o static",
+		"watch-css": "stylus source/stylus/ -o static -w",
+		"clean": "rm -rf static && mkdir static",
 		"build": "npm run clean && npm run build-css",
 		"watch": "npm run clean && npm run watch-css && nodemon",
-		"start": "node server"
+		"start": "node server",
+		"server": "nodemon -e jade,js"
 	},
 	"author": "Jacob",
 	"license": "ISC",
